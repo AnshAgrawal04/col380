@@ -72,6 +72,8 @@ int main(int argc, char *argv[])
     }
 
     // multiply the matrices using the type
+    int repeat = 1;
+    while (repeat--){
     switch (type)
     {
     case 0:
@@ -93,7 +95,7 @@ int main(int argc, char *argv[])
         matrixMultiplyKJI(matrix_A, matrix_B, matrix_C, number_row1, number_col1, number_col2);
         break;
     }
-
+    }
     // write the output file
     fp = fopen((path_output + "/mtx_C.bin").c_str(), "wb");
     for (int i = 0; i < number_row1; i++)

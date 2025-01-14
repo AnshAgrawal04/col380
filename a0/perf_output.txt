@@ -1,0 +1,162 @@
+Command: perf stat ./main 0 4096 4096 4096 paths/input_path_4096/ paths/output_path_4096/
+
+ Performance counter stats for './main 0 4096 4096 4096 paths/input_path_4096/ paths/output_path_4096/':
+
+       2,19,847.88 msec task-clock                #    1.000 CPUs utilized          
+               633      context-switches          #    2.879 /sec                   
+                51      cpu-migrations            #    0.232 /sec                   
+            98,493      page-faults               #  448.005 /sec                   
+ 9,80,86,05,06,859      cycles                    #    4.462 GHz                      (83.33%)
+      63,67,32,828      stalled-cycles-frontend   #    0.06% frontend cycles idle     (83.33%)
+      29,87,82,275      stalled-cycles-backend    #    0.03% backend cycles idle      (83.33%)
+ 6,19,97,66,16,647      instructions              #    0.63  insn per cycle         
+                                                  #    0.00  stalled cycles per insn  (83.33%)
+   68,97,54,31,172      branches                  #  313.742 M/sec                    (83.33%)
+       2,01,36,003      branch-misses             #    0.03% of all branches          (83.33%)
+
+     219.851566124 seconds time elapsed
+
+     219.682580000 seconds user
+       0.163998000 seconds sys
+
+
+
+Command: perf stat ./main 0 4096 4096 4096 paths/input_path_4096/ paths/output_path_4096/
+
+ Performance counter stats for './main 0 4096 4096 4096 paths/input_path_4096/ paths/output_path_4096/':
+
+       2,32,153.31 msec task-clock                #    1.000 CPUs utilized          
+             1,208      context-switches          #    5.203 /sec                   
+                85      cpu-migrations            #    0.366 /sec                   
+            98,494      page-faults               #  424.263 /sec                   
+10,07,49,95,49,603      cycles                    #    4.340 GHz                      (83.33%)
+      37,95,60,831      stalled-cycles-frontend   #    0.04% frontend cycles idle     (83.33%)
+      21,91,78,548      stalled-cycles-backend    #    0.02% backend cycles idle      (83.33%)
+ 6,20,28,00,24,896      instructions              #    0.62  insn per cycle         
+                                                  #    0.00  stalled cycles per insn  (83.33%)
+   69,02,85,92,664      branches                  #  297.341 M/sec                    (83.33%)
+       2,05,66,632      branch-misses             #    0.03% of all branches          (83.33%)
+
+     232.205759124 seconds time elapsed
+
+     231.941358000 seconds user
+       0.207990000 seconds sys
+
+
+
+Command: perf stat ./main 0 4096 4096 4096 paths/input_path_4096/ paths/output_path_4096/
+
+ Performance counter stats for './main 0 4096 4096 4096 paths/input_path_4096/ paths/output_path_4096/':
+
+       2,30,294.97 msec task-clock                #    1.000 CPUs utilized          
+             1,028      context-switches          #    4.464 /sec                   
+               104      cpu-migrations            #    0.452 /sec                   
+            98,494      page-faults               #  427.686 /sec                   
+10,15,61,03,01,004      cycles                    #    4.410 GHz                      (83.33%)
+   21,46,14,14,303      stalled-cycles-frontend   #    2.11% frontend cycles idle     (83.33%)
+      23,68,72,330      stalled-cycles-backend    #    0.02% backend cycles idle      (83.33%)
+ 6,20,30,40,21,943      instructions              #    0.61  insn per cycle         
+                                                  #    0.03  stalled cycles per insn  (83.33%)
+   69,01,06,67,020      branches                  #  299.662 M/sec                    (83.34%)
+       2,05,03,530      branch-misses             #    0.03% of all branches          (83.33%)
+
+     230.343153794 seconds time elapsed
+
+     230.092137000 seconds user
+       0.199989000 seconds sys
+
+
+
+Command: perf stat ./main 1 4096 4096 4096 paths/input_path_4096/ paths/output_path_4096/
+
+ Performance counter stats for './main 1 4096 4096 4096 paths/input_path_4096/ paths/output_path_4096/':
+
+         30,506.19 msec task-clock                #    0.999 CPUs utilized          
+               634      context-switches          #   20.783 /sec                   
+                78      cpu-migrations            #    2.557 /sec                   
+            98,494      page-faults               #    3.229 K/sec                  
+ 1,21,54,06,79,102      cycles                    #    3.984 GHz                      (83.34%)
+      26,49,32,605      stalled-cycles-frontend   #    0.22% frontend cycles idle     (83.32%)
+      14,28,22,422      stalled-cycles-backend    #    0.12% backend cycles idle      (83.32%)
+ 2,76,29,07,27,133      instructions              #    2.27  insn per cycle         
+                                                  #    0.00  stalled cycles per insn  (83.34%)
+   34,65,67,70,445      branches                  #    1.136 G/sec                    (83.34%)
+       1,84,92,639      branch-misses             #    0.05% of all branches          (83.35%)
+
+      30.550842855 seconds time elapsed
+
+      30.288395000 seconds user
+       0.216059000 seconds sys
+
+
+
+Command: perf stat ./main 1 4096 4096 4096 paths/input_path_4096/ paths/output_path_4096/
+
+ Performance counter stats for './main 1 4096 4096 4096 paths/input_path_4096/ paths/output_path_4096/':
+
+         26,198.29 msec task-clock                #    0.999 CPUs utilized          
+                97      context-switches          #    3.703 /sec                   
+                 8      cpu-migrations            #    0.305 /sec                   
+            98,494      page-faults               #    3.760 K/sec                  
+ 1,11,54,43,16,581      cycles                    #    4.258 GHz                      (83.33%)
+      29,81,81,319      stalled-cycles-frontend   #    0.27% frontend cycles idle     (83.33%)
+      10,71,66,858      stalled-cycles-backend    #    0.10% backend cycles idle      (83.33%)
+ 2,76,53,07,81,379      instructions              #    2.48  insn per cycle         
+                                                  #    0.00  stalled cycles per insn  (83.34%)
+   34,64,47,34,209      branches                  #    1.322 G/sec                    (83.34%)
+       1,83,39,215      branch-misses             #    0.05% of all branches          (83.33%)
+
+      26.233033386 seconds time elapsed
+
+      25.986324000 seconds user
+       0.211986000 seconds sys
+
+
+
+Command: perf stat ./main 1 4096 4096 4096 paths/input_path_4096/ paths/output_path_4096/
+
+ Performance counter stats for './main 1 4096 4096 4096 paths/input_path_4096/ paths/output_path_4096/':
+
+         25,875.31 msec task-clock                #    0.996 CPUs utilized          
+               119      context-switches          #    4.599 /sec                   
+                11      cpu-migrations            #    0.425 /sec                   
+            98,493      page-faults               #    3.806 K/sec                  
+ 1,08,12,43,60,891      cycles                    #    4.179 GHz                      (83.33%)
+      18,90,36,919      stalled-cycles-frontend   #    0.17% frontend cycles idle     (83.32%)
+       9,01,71,419      stalled-cycles-backend    #    0.08% backend cycles idle      (83.33%)
+ 2,76,55,04,04,744      instructions              #    2.56  insn per cycle         
+                                                  #    0.00  stalled cycles per insn  (83.35%)
+   34,64,56,09,578      branches                  #    1.339 G/sec                    (83.34%)
+       1,82,77,201      branch-misses             #    0.05% of all branches          (83.34%)
+
+      25.971702703 seconds time elapsed
+
+      25.663460000 seconds user
+       0.211962000 seconds sys
+
+
+
+Command: perf stat ./main 2 4096 4096 4096 paths/input_path_4096/ paths/output_path_4096/
+
+ Performance counter stats for './main 2 4096 4096 4096 paths/input_path_4096/ paths/output_path_4096/':
+
+       1,90,251.25 msec task-clock                #    1.000 CPUs utilized          
+               663      context-switches          #    3.485 /sec                   
+               140      cpu-migrations            #    0.736 /sec                   
+            98,495      page-faults               #  517.710 /sec                   
+ 8,07,12,22,80,428      cycles                    #    4.242 GHz                      (83.33%)
+    5,73,16,62,431      stalled-cycles-frontend   #    0.71% frontend cycles idle     (83.34%)
+      18,88,81,681      stalled-cycles-backend    #    0.02% backend cycles idle      (83.33%)
+ 6,20,21,24,95,086      instructions              #    0.77  insn per cycle         
+                                                  #    0.01  stalled cycles per insn  (83.33%)
+   69,01,93,15,220      branches                  #  362.780 M/sec                    (83.33%)
+       2,03,04,338      branch-misses             #    0.03% of all branches          (83.33%)
+
+     190.297721805 seconds time elapsed
+
+     190.034524000 seconds user
+       0.215993000 seconds sys
+
+
+
+Command: perf stat ./main 2 4096 4096 4096 paths/input_path_4096/ paths/output_path_4096/

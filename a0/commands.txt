@@ -1,0 +1,12 @@
+perf stat ./main 0 16 16 16 input_path/ output_path/
+
+Things to remember:
+16-512: 
+    ran 1000 times inside, 
+1024-2048:
+    ran 10 times inside, getting(x10 results of x1 one)
+    getting the same values from running multiple times hence not doing 3 times stuff
+4096:
+    3 entries
+
+sudo sysctl -w kernel.perf_event_paranoid=-1
