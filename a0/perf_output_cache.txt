@@ -1,0 +1,1170 @@
+Command: perf stat -e cache-misses ./main 0 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 0 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            49,148      cache-misses                                                
+
+       0.001413106 seconds time elapsed
+
+       0.001411000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 0 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 0 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            48,247      cache-misses                                                
+
+       0.000749476 seconds time elapsed
+
+       0.000747000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 0 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 0 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            49,185      cache-misses                                                
+
+       0.001237545 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001275000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 1 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 1 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            50,214      cache-misses                                                
+
+       0.001320415 seconds time elapsed
+
+       0.001348000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 1 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 1 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            48,929      cache-misses                                                
+
+       0.001141298 seconds time elapsed
+
+       0.001180000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 1 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 1 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            47,508      cache-misses                                                
+
+       0.001352238 seconds time elapsed
+
+       0.001351000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 2 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 2 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            48,127      cache-misses                                                
+
+       0.001287902 seconds time elapsed
+
+       0.001351000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 2 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 2 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            48,296      cache-misses                                                
+
+       0.001269497 seconds time elapsed
+
+       0.001301000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 2 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 2 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            49,162      cache-misses                                                
+
+       0.001349242 seconds time elapsed
+
+       0.001337000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 3 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 3 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            46,892      cache-misses                                                
+
+       0.001255379 seconds time elapsed
+
+       0.001295000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 3 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 3 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            48,978      cache-misses                                                
+
+       0.001268354 seconds time elapsed
+
+       0.001300000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 3 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 3 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            47,597      cache-misses                                                
+
+       0.001149895 seconds time elapsed
+
+       0.001210000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 4 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 4 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            49,138      cache-misses                                                
+
+       0.001354912 seconds time elapsed
+
+       0.001387000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 4 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 4 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            48,834      cache-misses                                                
+
+       0.001211024 seconds time elapsed
+
+       0.001250000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 4 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 4 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            49,613      cache-misses                                                
+
+       0.001319444 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001350000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 5 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 5 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            50,229      cache-misses                                                
+
+       0.001935101 seconds time elapsed
+
+       0.001307000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 5 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 5 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            50,608      cache-misses                                                
+
+       0.001433085 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001149000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 5 16 16 16 paths/input_path_16/ paths/output_path_16/
+
+ Performance counter stats for './main 5 16 16 16 paths/input_path_16/ paths/output_path_16/':
+
+            49,281      cache-misses                                                
+
+       0.001519412 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001322000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 0 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 0 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            50,128      cache-misses                                                
+
+       0.001309494 seconds time elapsed
+
+       0.001347000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 0 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 0 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            49,408      cache-misses                                                
+
+       0.001345134 seconds time elapsed
+
+       0.001391000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 0 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 0 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            48,690      cache-misses                                                
+
+       0.001403948 seconds time elapsed
+
+       0.001408000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 1 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 1 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            49,465      cache-misses                                                
+
+       0.001363580 seconds time elapsed
+
+       0.001372000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 1 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 1 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            49,846      cache-misses                                                
+
+       0.001219900 seconds time elapsed
+
+       0.001256000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 1 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 1 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            53,536      cache-misses                                                
+
+       0.001424898 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001339000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 2 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 2 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            49,571      cache-misses                                                
+
+       0.001309755 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001361000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 2 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 2 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            50,582      cache-misses                                                
+
+       0.001257163 seconds time elapsed
+
+       0.001269000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 2 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 2 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            49,339      cache-misses                                                
+
+       0.001130026 seconds time elapsed
+
+       0.001138000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 3 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 3 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            50,526      cache-misses                                                
+
+       0.001388348 seconds time elapsed
+
+       0.001437000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 3 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 3 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            49,117      cache-misses                                                
+
+       0.001407234 seconds time elapsed
+
+       0.001422000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 3 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 3 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            51,743      cache-misses                                                
+
+       0.001309564 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001342000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 4 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 4 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            49,112      cache-misses                                                
+
+       0.001648864 seconds time elapsed
+
+       0.001270000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 4 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 4 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            49,067      cache-misses                                                
+
+       0.001283915 seconds time elapsed
+
+       0.001316000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 4 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 4 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            50,294      cache-misses                                                
+
+       0.001282963 seconds time elapsed
+
+       0.001324000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 5 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 5 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            52,194      cache-misses                                                
+
+       0.001278915 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001323000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 5 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 5 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            55,041      cache-misses                                                
+
+       0.001254888 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001280000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 5 32 32 32 paths/input_path_32/ paths/output_path_32/
+
+ Performance counter stats for './main 5 32 32 32 paths/input_path_32/ paths/output_path_32/':
+
+            48,298      cache-misses                                                
+
+       0.001262493 seconds time elapsed
+
+       0.001294000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 0 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 0 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            54,750      cache-misses                                                
+
+       0.001881687 seconds time elapsed
+
+       0.001984000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 0 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 0 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            53,915      cache-misses                                                
+
+       0.001873430 seconds time elapsed
+
+       0.001931000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 0 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 0 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            63,043      cache-misses                                                
+
+       0.001578918 seconds time elapsed
+
+       0.001608000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 1 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 1 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            56,231      cache-misses                                                
+
+       0.001616020 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001647000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 1 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 1 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            56,834      cache-misses                                                
+
+       0.001250611 seconds time elapsed
+
+       0.001294000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 1 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 1 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            82,327      cache-misses                                                
+
+       0.001786922 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001784000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 2 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 2 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            57,283      cache-misses                                                
+
+       0.001655477 seconds time elapsed
+
+       0.001693000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 2 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 2 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            59,534      cache-misses                                                
+
+       0.001698220 seconds time elapsed
+
+       0.001691000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 2 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 2 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            57,576      cache-misses                                                
+
+       0.001552707 seconds time elapsed
+
+       0.001540000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 3 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 3 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            57,040      cache-misses                                                
+
+       0.001518381 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001537000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 3 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 3 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            71,895      cache-misses                                                
+
+       0.001873150 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001964000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 3 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 3 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            55,685      cache-misses                                                
+
+       0.001648303 seconds time elapsed
+
+       0.001683000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 4 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 4 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            56,896      cache-misses                                                
+
+       0.001512529 seconds time elapsed
+
+       0.001550000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 4 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 4 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            60,991      cache-misses                                                
+
+       0.001208929 seconds time elapsed
+
+       0.001211000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 4 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 4 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            59,297      cache-misses                                                
+
+       0.001223928 seconds time elapsed
+
+       0.001155000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 5 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 5 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            70,561      cache-misses                                                
+
+       0.001455388 seconds time elapsed
+
+       0.001474000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 5 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 5 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            57,688      cache-misses                                                
+
+       0.001341667 seconds time elapsed
+
+       0.001528000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 5 64 64 64 paths/input_path_64/ paths/output_path_64/
+
+ Performance counter stats for './main 5 64 64 64 paths/input_path_64/ paths/output_path_64/':
+
+            52,661      cache-misses                                                
+
+       0.001731244 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001773000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 0 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 0 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+           121,867      cache-misses                                                
+
+       0.003235147 seconds time elapsed
+
+       0.000000000 seconds user
+       0.003256000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 0 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 0 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+           125,435      cache-misses                                                
+
+       0.002837925 seconds time elapsed
+
+       0.002846000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 0 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 0 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+           121,747      cache-misses                                                
+
+       0.002670870 seconds time elapsed
+
+       0.002716000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 1 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 1 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+            75,316      cache-misses                                                
+
+       0.001670216 seconds time elapsed
+
+       0.001706000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 1 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 1 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+            74,982      cache-misses                                                
+
+       0.002142413 seconds time elapsed
+
+       0.002189000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 1 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 1 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+            78,047      cache-misses                                                
+
+       0.001912196 seconds time elapsed
+
+       0.000000000 seconds user
+       0.001946000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 2 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 2 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+            94,986      cache-misses                                                
+
+       0.003085545 seconds time elapsed
+
+       0.003078000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 2 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 2 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+            91,673      cache-misses                                                
+
+       0.002669327 seconds time elapsed
+
+       0.002675000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 2 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 2 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+           105,743      cache-misses                                                
+
+       0.003081718 seconds time elapsed
+
+       0.003154000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 3 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 3 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+            98,589      cache-misses                                                
+
+       0.002840259 seconds time elapsed
+
+       0.002857000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 3 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 3 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+            97,324      cache-misses                                                
+
+       0.003142737 seconds time elapsed
+
+       0.003149000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 3 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 3 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+           102,264      cache-misses                                                
+
+       0.002901478 seconds time elapsed
+
+       0.002879000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 4 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 4 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+            91,319      cache-misses                                                
+
+       0.002012861 seconds time elapsed
+
+       0.001964000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 4 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 4 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+            93,327      cache-misses                                                
+
+       0.001942094 seconds time elapsed
+
+       0.001920000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 4 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 4 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+            94,256      cache-misses                                                
+
+       0.002064873 seconds time elapsed
+
+       0.002038000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 5 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 5 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+            73,939      cache-misses                                                
+
+       0.002891008 seconds time elapsed
+
+       0.002885000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 5 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 5 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+            85,763      cache-misses                                                
+
+       0.003149580 seconds time elapsed
+
+       0.003171000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 5 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+ Performance counter stats for './main 5 128 128 128 paths/input_path_128/ paths/output_path_128/':
+
+            80,547      cache-misses                                                
+
+       0.002631463 seconds time elapsed
+
+       0.002654000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 0 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 0 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+           757,771      cache-misses                                                
+
+       0.014417114 seconds time elapsed
+
+       0.010825000 seconds user
+       0.003608000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 0 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 0 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+           628,433      cache-misses                                                
+
+       0.013632330 seconds time elapsed
+
+       0.006726000 seconds user
+       0.006726000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 0 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 0 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+           660,488      cache-misses                                                
+
+       0.012919515 seconds time elapsed
+
+       0.013009000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 1 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 1 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+           161,996      cache-misses                                                
+
+       0.004625568 seconds time elapsed
+
+       0.004647000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 1 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 1 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+           181,532      cache-misses                                                
+
+       0.004829314 seconds time elapsed
+
+       0.002422000 seconds user
+       0.002422000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 1 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 1 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+           177,735      cache-misses                                                
+
+       0.004607233 seconds time elapsed
+
+       0.004620000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 2 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 2 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+           420,984      cache-misses                                                
+
+       0.013061581 seconds time elapsed
+
+       0.013082000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 2 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 2 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+           419,530      cache-misses                                                
+
+       0.013010812 seconds time elapsed
+
+       0.013100000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 2 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 2 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+           458,474      cache-misses                                                
+
+       0.013262461 seconds time elapsed
+
+       0.013275000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 3 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 3 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+         1,726,026      cache-misses                                                
+
+       0.018659478 seconds time elapsed
+
+       0.018692000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 3 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 3 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+         1,511,447      cache-misses                                                
+
+       0.017757306 seconds time elapsed
+
+       0.017775000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 3 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 3 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+         2,016,113      cache-misses                                                
+
+       0.017143773 seconds time elapsed
+
+       0.017128000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 4 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 4 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+           235,240      cache-misses                                                
+
+       0.004821820 seconds time elapsed
+
+       0.004842000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 4 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 4 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+           276,478      cache-misses                                                
+
+       0.004747034 seconds time elapsed
+
+       0.002348000 seconds user
+       0.002348000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 4 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 4 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+           280,151      cache-misses                                                
+
+       0.005090872 seconds time elapsed
+
+       0.005121000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 5 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 5 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+         1,472,744      cache-misses                                                
+
+       0.016861845 seconds time elapsed
+
+       0.016827000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 5 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 5 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+         1,663,326      cache-misses                                                
+
+       0.018087326 seconds time elapsed
+
+       0.017807000 seconds user
+       0.000000000 seconds sys
+
+
+
+Command: perf stat -e cache-misses ./main 5 256 256 256 paths/input_path_256/ paths/output_path_256/
+
+ Performance counter stats for './main 5 256 256 256 paths/input_path_256/ paths/output_path_256/':
+
+         1,385,436      cache-misses                                                
+
+       0.016931320 seconds time elapsed
+
+       0.016928000 seconds user
+       0.000000000 seconds sys
+
+
+

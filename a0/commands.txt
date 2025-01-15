@@ -10,3 +10,5 @@ Things to remember:
     3 entries
 
 sudo sysctl -w kernel.perf_event_paranoid=-1
+
+perf stat -e cache-references,cache-misses ./main 0 128 128 128 paths/input_path_128/ paths/output_path_128/
