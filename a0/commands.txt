@@ -12,3 +12,5 @@ Things to remember:
 sudo sysctl -w kernel.perf_event_paranoid=-1
 
 perf stat -e cache-references,cache-misses ./main 0 128 128 128 paths/input_path_128/ paths/output_path_128/
+
+perf record -e task-clock,cycles,instructions,cache-references,cache-misses,user_time -F 1000 -g --no-kernel ./main 0 1000 1000 1000 paths/input_path_1000/ paths/output_path_1000/

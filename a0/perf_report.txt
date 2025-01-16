@@ -1,0 +1,1173 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 874  of event 'task-clock'
+# Event count (approx.): 874000000
+#
+# Children      Self  Command  Shared Object         Symbol                                
+# ........  ........  .......  ....................  ......................................
+#
+    97.25%    97.25%  main     main                  [.] main
+            |
+            ---0x41435a18d1ce6f56
+               0x55b96b582fc0
+               main
+
+    97.25%     0.00%  main     [unknown]             [.] 0x41435a18d1ce6f56
+            |
+            ---0x41435a18d1ce6f56
+               0x55b96b582fc0
+               main
+
+    97.25%     0.00%  main     [unknown]             [.] 0x000055b96b582fc0
+            |
+            ---0x55b96b582fc0
+               main
+
+     2.17%     0.00%  main     [kernel.kallsyms]     [k] entry_SYSCALL_64_after_hwframe
+            |
+            ---entry_SYSCALL_64_after_hwframe
+               do_syscall_64
+               |          
+               |--1.03%--__x64_sys_read
+               |          ksys_read
+               |          vfs_read
+               |          |          
+               |           --0.92%--new_sync_read
+               |                     ext4_file_read_iter
+               |                     generic_file_read_iter
+               |                     filemap_read
+               |                     |          
+               |                      --0.80%--copy_user_enhanced_fast_string
+               |          
+                --0.80%--__x64_sys_write
+                          ksys_write
+                          vfs_write
+                          |          
+                           --0.57%--new_sync_write
+                                     ext4_file_write_iter
+                                     ext4_buffered_write_iter
+                                     generic_perform_write
+
+     2.17%     0.00%  main     [kernel.kallsyms]     [k] do_syscall_64
+            |
+            ---do_syscall_64
+               |          
+               |--1.03%--__x64_sys_read
+               |          ksys_read
+               |          vfs_read
+               |          |          
+               |           --0.92%--new_sync_read
+               |                     ext4_file_read_iter
+               |                     generic_file_read_iter
+               |                     filemap_read
+               |                     |          
+               |                      --0.80%--copy_user_enhanced_fast_string
+               |          
+                --0.80%--__x64_sys_write
+                          ksys_write
+                          vfs_write
+                          |          
+                           --0.57%--new_sync_write
+                                     ext4_file_write_iter
+                                     ext4_buffered_write_iter
+                                     generic_perform_write
+
+     1.49%     0.00%  main     [unknown]             [k] 0000000000000000
+            |
+            ---0
+               |          
+                --1.03%--read
+                          entry_SYSCALL_64_after_hwframe
+                          do_syscall_64
+                          __x64_sys_read
+                          ksys_read
+                          vfs_read
+                          |          
+                           --0.92%--new_sync_read
+                                     ext4_file_read_iter
+                                     generic_file_read_iter
+                                     filemap_read
+                                     |          
+                                      --0.80%--copy_user_enhanced_fast_string
+
+     1.03%     0.00%  main     libc.so.6             [.] read
+            |
+            ---read
+               entry_SYSCALL_64_after_hwframe
+               do_syscall_64
+               __x64_sys_read
+               ksys_read
+               vfs_read
+               |          
+                --0.92%--new_sync_read
+                          ext4_file_read_iter
+                          generic_file_read_iter
+                          filemap_read
+                          |          
+                           --0.80%--copy_user_enhanced_fast_string
+
+     1.03%     0.00%  main     [kernel.kallsyms]     [k] __x64_sys_read
+            |
+            ---__x64_sys_read
+               ksys_read
+               vfs_read
+               |          
+                --0.92%--new_sync_read
+                          ext4_file_read_iter
+                          generic_file_read_iter
+                          filemap_read
+                          |          
+                           --0.80%--copy_user_enhanced_fast_string
+
+     1.03%     0.00%  main     [kernel.kallsyms]     [k] ksys_read
+            |
+            ---ksys_read
+               vfs_read
+               |          
+                --0.92%--new_sync_read
+                          ext4_file_read_iter
+                          generic_file_read_iter
+                          filemap_read
+                          |          
+                           --0.80%--copy_user_enhanced_fast_string
+
+     1.03%     0.00%  main     [kernel.kallsyms]     [k] vfs_read
+            |
+            ---vfs_read
+               |          
+                --0.92%--new_sync_read
+                          ext4_file_read_iter
+                          generic_file_read_iter
+                          filemap_read
+                          |          
+                           --0.80%--copy_user_enhanced_fast_string
+
+     1.03%     0.80%  main     [kernel.kallsyms]     [k] copy_user_enhanced_fast_string
+            |          
+             --0.57%--0
+                       read
+                       entry_SYSCALL_64_after_hwframe
+                       do_syscall_64
+                       __x64_sys_read
+                       ksys_read
+                       vfs_read
+                       new_sync_read
+                       ext4_file_read_iter
+                       generic_file_read_iter
+                       filemap_read
+                       copy_user_enhanced_fast_string
+
+     0.92%     0.00%  main     [kernel.kallsyms]     [k] new_sync_read
+            |
+            ---new_sync_read
+               ext4_file_read_iter
+               generic_file_read_iter
+               filemap_read
+               |          
+                --0.80%--copy_user_enhanced_fast_string
+
+     0.92%     0.00%  main     [kernel.kallsyms]     [k] ext4_file_read_iter
+            |
+            ---ext4_file_read_iter
+               generic_file_read_iter
+               filemap_read
+               |          
+                --0.80%--copy_user_enhanced_fast_string
+
+     0.92%     0.00%  main     [kernel.kallsyms]     [k] generic_file_read_iter
+            |
+            ---generic_file_read_iter
+               filemap_read
+               |          
+                --0.80%--copy_user_enhanced_fast_string
+
+     0.92%     0.00%  main     [kernel.kallsyms]     [k] filemap_read
+            |
+            ---filemap_read
+               |          
+                --0.80%--copy_user_enhanced_fast_string
+
+     0.80%     0.00%  main     libc.so.6             [.] __GI___libc_write
+            |
+            ---__GI___libc_write
+               entry_SYSCALL_64_after_hwframe
+               do_syscall_64
+               __x64_sys_write
+               ksys_write
+               vfs_write
+               |          
+                --0.57%--new_sync_write
+                          ext4_file_write_iter
+                          ext4_buffered_write_iter
+                          generic_perform_write
+
+     0.80%     0.00%  main     [kernel.kallsyms]     [k] __x64_sys_write
+            |
+            ---__x64_sys_write
+               ksys_write
+               vfs_write
+               |          
+                --0.57%--new_sync_write
+                          ext4_file_write_iter
+                          ext4_buffered_write_iter
+                          generic_perform_write
+
+     0.80%     0.00%  main     [kernel.kallsyms]     [k] ksys_write
+            |
+            ---ksys_write
+               vfs_write
+               |          
+                --0.57%--new_sync_write
+                          ext4_file_write_iter
+                          ext4_buffered_write_iter
+                          generic_perform_write
+
+     0.80%     0.00%  main     [kernel.kallsyms]     [k] vfs_write
+            |
+            ---vfs_write
+               |          
+                --0.57%--new_sync_write
+                          ext4_file_write_iter
+                          ext4_buffered_write_iter
+                          generic_perform_write
+
+     0.57%     0.11%  main     [kernel.kallsyms]     [k] do_user_addr_fault
+     0.57%     0.00%  main     [kernel.kallsyms]     [k] new_sync_write
+            |
+            ---new_sync_write
+               ext4_file_write_iter
+               ext4_buffered_write_iter
+               generic_perform_write
+
+     0.57%     0.00%  main     [kernel.kallsyms]     [k] ext4_file_write_iter
+            |
+            ---ext4_file_write_iter
+               ext4_buffered_write_iter
+               generic_perform_write
+
+     0.57%     0.00%  main     [kernel.kallsyms]     [k] asm_exc_page_fault
+            |
+            ---asm_exc_page_fault
+               exc_page_fault
+               do_user_addr_fault
+
+     0.57%     0.00%  main     [kernel.kallsyms]     [k] ext4_buffered_write_iter
+            |
+            ---ext4_buffered_write_iter
+               generic_perform_write
+
+     0.57%     0.00%  main     [kernel.kallsyms]     [k] exc_page_fault
+            |
+            ---exc_page_fault
+               do_user_addr_fault
+
+     0.57%     0.00%  main     [kernel.kallsyms]     [k] generic_perform_write
+            |
+            ---generic_perform_write
+
+     0.46%     0.00%  main     [kernel.kallsyms]     [k] handle_mm_fault
+     0.46%     0.00%  main     [kernel.kallsyms]     [k] __handle_mm_fault
+     0.46%     0.00%  main     [kernel.kallsyms]     [k] handle_pte_fault
+     0.34%     0.00%  main     libc.so.6             [.] _int_malloc
+     0.34%     0.11%  main     [kernel.kallsyms]     [k] __fsnotify_parent
+     0.34%     0.00%  main     [kernel.kallsyms]     [k] ext4_da_write_begin
+     0.34%     0.00%  main     [kernel.kallsyms]     [k] do_anonymous_page
+     0.34%     0.00%  main     [kernel.kallsyms]     [k] __mem_cgroup_charge
+     0.34%     0.00%  main     [kernel.kallsyms]     [k] try_charge_memcg
+     0.23%     0.23%  main     [kernel.kallsyms]     [k] clear_page_erms
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] fsnotify
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] grab_cache_page_write_begin
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] pagecache_get_page
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] send_to_group
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] __filemap_get_folio
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] fsnotify_handle_inode_event.isra.0
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] filemap_add_folio
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] inotify_handle_inode_event
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] __filemap_add_folio
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] __kmalloc
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] vma_alloc_folio
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] __folio_alloc
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] obj_cgroup_charge
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] __alloc_pages
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] charge_memcg
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] get_page_from_freelist
+     0.11%     0.11%  main     [kernel.kallsyms]     [k] consume_stock
+     0.11%     0.11%  main     [kernel.kallsyms]     [k] refill_stock
+     0.11%     0.00%  main     [unknown]             [k] 0x41433451a1e3156d
+     0.11%     0.11%  main     [kernel.kallsyms]     [k] mpage_process_page
+     0.11%     0.11%  main     [kernel.kallsyms]     [k] __rcu_read_lock
+     0.11%     0.11%  main     [kernel.kallsyms]     [k] consume_obj_stock
+     0.11%     0.00%  main     libc.so.6             [.] __close_nocancel
+     0.11%     0.00%  main     [unknown]             [k] 0x414285f2782e1209
+     0.11%     0.00%  main     [unknown]             [k] 0x41429f8a42c5eaa5
+     0.11%     0.11%  main     [kernel.kallsyms]     [k] propagate_protected_usage
+     0.11%     0.00%  main     [unknown]             [k] 0x41429f1a32eacde2
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] syscall_exit_to_user_mode
+     0.11%     0.11%  main     [kernel.kallsyms]     [k] find_lock_entries
+     0.11%     0.11%  main     [kernel.kallsyms]     [k] xas_descend
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] exit_to_user_mode_prepare
+     0.11%     0.00%  main     [unknown]             [k] 0x7461705f74757074
+     0.11%     0.11%  main     [kernel.kallsyms]     [k] __rcu_read_unlock
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] exit_to_user_mode_loop
+     0.11%     0.00%  main     libc.so.6             [.] __GI___libc_open
+     0.11%     0.00%  main     [unknown]             [k] 0x4142b72f583f90cf
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] task_work_run
+     0.11%     0.11%  main     [kernel.kallsyms]     [k] zap_pte_range
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] ____fput
+     0.11%     0.00%  main     libc.so.6             [.] __brk
+     0.11%     0.00%  main     [unknown]             [k] 0x414336de3066f418
+     0.11%     0.00%  main     [unknown]             [k] 0x41436bbea8db3d2c
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] __fput
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] __x64_sys_openat
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] do_sys_openat2
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] ext4_release_file
+     0.11%     0.11%  main     [kernel.kallsyms]     [k] _compound_head
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] __x64_sys_brk
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] do_filp_open
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] ext4_alloc_da_blocks
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] __do_sys_brk
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] filemap_flush
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] path_openat
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] __do_munmap
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] __filemap_fdatawrite_range
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] do_open
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] ext4_block_write_begin
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] create_empty_buffers
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] do_truncate
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] filemap_fdatawrite_wbc
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] unmap_region
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] alloc_page_buffers
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] do_writepages
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] notify_change
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] unmap_vmas
+     0.11%     0.11%  main     ld-linux-x86-64.so.2  [.] _dl_relocate_object
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] alloc_buffer_head
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] ext4_setattr
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] ext4_writepages
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] filemap_get_pages
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] unmap_single_vma
+     0.11%     0.00%  main     ld-linux-x86-64.so.2  [.] _dl_start_user
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] filemap_get_read_batch
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] kmem_cache_alloc
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] mpage_map_and_submit_extent
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] truncate_pagecache
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] unmap_page_range
+     0.11%     0.00%  main     ld-linux-x86-64.so.2  [.] _dl_sysdep_start
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] mpage_map_and_submit_buffers
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] page_counter_try_charge
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] truncate_inode_pages_range
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] xas_load
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] zap_pmd_range.isra.0
+     0.11%     0.00%  main     ld-linux-x86-64.so.2  [.] dl_main
+     0.11%     0.11%  main     libc.so.6             [.] _int_free
+
+
+# Samples: 873  of event 'cycles'
+# Event count (approx.): 3505833601
+#
+# Children      Self  Command  Shared Object         Symbol                              
+# ........  ........  .......  ....................  ....................................
+#
+    96.99%     0.00%  main     [unknown]             [k] 0x000055b96b582fc0
+            |
+            ---0x55b96b582fc0
+               |          
+                --96.85%--main
+
+    96.85%     0.00%  main     [unknown]             [.] 0x41435a18d1ce6f56
+            |
+            ---0x41435a18d1ce6f56
+               0x55b96b582fc0
+               main
+
+    96.85%    96.72%  main     main                  [.] main
+            |          
+             --96.72%--0x41435a18d1ce6f56
+                       0x55b96b582fc0
+                       main
+
+     2.01%     0.00%  main     [kernel.kallsyms]     [k] entry_SYSCALL_64_after_hwframe
+            |
+            ---entry_SYSCALL_64_after_hwframe
+               do_syscall_64
+               |          
+               |--0.92%--__x64_sys_write
+               |          ksys_write
+               |          vfs_write
+               |          new_sync_write
+               |          ext4_file_write_iter
+               |          ext4_buffered_write_iter
+               |          |          
+               |           --0.80%--generic_perform_write
+               |          
+                --0.64%--__x64_sys_read
+                          ksys_read
+                          vfs_read
+
+     2.01%     0.00%  main     [kernel.kallsyms]     [k] do_syscall_64
+            |
+            ---do_syscall_64
+               |          
+               |--0.92%--__x64_sys_write
+               |          ksys_write
+               |          vfs_write
+               |          new_sync_write
+               |          ext4_file_write_iter
+               |          ext4_buffered_write_iter
+               |          |          
+               |           --0.80%--generic_perform_write
+               |          
+                --0.64%--__x64_sys_read
+                          ksys_read
+                          vfs_read
+
+     1.37%     0.00%  main     [unknown]             [k] 0000000000000000
+            |
+            ---0
+               |          
+                --0.64%--read
+                          entry_SYSCALL_64_after_hwframe
+                          do_syscall_64
+                          __x64_sys_read
+                          ksys_read
+                          vfs_read
+
+     0.94%     0.14%  main     [kernel.kallsyms]     [k] asm_exc_page_fault
+            |          
+             --0.80%--asm_exc_page_fault
+                       exc_page_fault
+                       do_user_addr_fault
+                       handle_mm_fault
+                       __handle_mm_fault
+                       handle_pte_fault
+                       do_anonymous_page
+                       vma_alloc_folio
+                       __folio_alloc
+                       __alloc_pages
+                       |          
+                        --0.62%--get_page_from_freelist
+
+     0.92%     0.00%  main     libc.so.6             [.] __GI___libc_write
+            |
+            ---__GI___libc_write
+               entry_SYSCALL_64_after_hwframe
+               do_syscall_64
+               __x64_sys_write
+               ksys_write
+               vfs_write
+               new_sync_write
+               ext4_file_write_iter
+               ext4_buffered_write_iter
+               |          
+                --0.80%--generic_perform_write
+
+     0.92%     0.00%  main     [kernel.kallsyms]     [k] __x64_sys_write
+            |
+            ---__x64_sys_write
+               ksys_write
+               vfs_write
+               new_sync_write
+               ext4_file_write_iter
+               ext4_buffered_write_iter
+               |          
+                --0.80%--generic_perform_write
+
+     0.92%     0.00%  main     [kernel.kallsyms]     [k] ksys_write
+            |
+            ---ksys_write
+               vfs_write
+               new_sync_write
+               ext4_file_write_iter
+               ext4_buffered_write_iter
+               |          
+                --0.80%--generic_perform_write
+
+     0.92%     0.00%  main     [kernel.kallsyms]     [k] vfs_write
+            |
+            ---vfs_write
+               new_sync_write
+               ext4_file_write_iter
+               ext4_buffered_write_iter
+               |          
+                --0.80%--generic_perform_write
+
+     0.92%     0.00%  main     [kernel.kallsyms]     [k] new_sync_write
+            |
+            ---new_sync_write
+               ext4_file_write_iter
+               ext4_buffered_write_iter
+               |          
+                --0.80%--generic_perform_write
+
+     0.92%     0.00%  main     [kernel.kallsyms]     [k] ext4_file_write_iter
+            |
+            ---ext4_file_write_iter
+               ext4_buffered_write_iter
+               |          
+                --0.80%--generic_perform_write
+
+     0.92%     0.00%  main     [kernel.kallsyms]     [k] ext4_buffered_write_iter
+            |
+            ---ext4_buffered_write_iter
+               |          
+                --0.80%--generic_perform_write
+
+     0.80%     0.00%  main     [kernel.kallsyms]     [k] generic_perform_write
+            |
+            ---generic_perform_write
+
+     0.80%     0.00%  main     [kernel.kallsyms]     [k] exc_page_fault
+            |
+            ---exc_page_fault
+               do_user_addr_fault
+               handle_mm_fault
+               __handle_mm_fault
+               handle_pte_fault
+               do_anonymous_page
+               vma_alloc_folio
+               __folio_alloc
+               __alloc_pages
+               |          
+                --0.62%--get_page_from_freelist
+
+     0.80%     0.00%  main     [kernel.kallsyms]     [k] do_user_addr_fault
+            |
+            ---do_user_addr_fault
+               handle_mm_fault
+               __handle_mm_fault
+               handle_pte_fault
+               do_anonymous_page
+               vma_alloc_folio
+               __folio_alloc
+               __alloc_pages
+               |          
+                --0.62%--get_page_from_freelist
+
+     0.80%     0.00%  main     [kernel.kallsyms]     [k] handle_mm_fault
+            |
+            ---handle_mm_fault
+               __handle_mm_fault
+               handle_pte_fault
+               do_anonymous_page
+               vma_alloc_folio
+               __folio_alloc
+               __alloc_pages
+               |          
+                --0.62%--get_page_from_freelist
+
+     0.80%     0.00%  main     [kernel.kallsyms]     [k] __handle_mm_fault
+            |
+            ---__handle_mm_fault
+               handle_pte_fault
+               do_anonymous_page
+               vma_alloc_folio
+               __folio_alloc
+               __alloc_pages
+               |          
+                --0.62%--get_page_from_freelist
+
+     0.80%     0.00%  main     [kernel.kallsyms]     [k] handle_pte_fault
+            |
+            ---handle_pte_fault
+               do_anonymous_page
+               vma_alloc_folio
+               __folio_alloc
+               __alloc_pages
+               |          
+                --0.62%--get_page_from_freelist
+
+     0.80%     0.00%  main     [kernel.kallsyms]     [k] do_anonymous_page
+            |
+            ---do_anonymous_page
+               vma_alloc_folio
+               __folio_alloc
+               __alloc_pages
+               |          
+                --0.62%--get_page_from_freelist
+
+     0.80%     0.00%  main     [kernel.kallsyms]     [k] vma_alloc_folio
+            |
+            ---vma_alloc_folio
+               __folio_alloc
+               __alloc_pages
+               |          
+                --0.62%--get_page_from_freelist
+
+     0.80%     0.00%  main     [kernel.kallsyms]     [k] __folio_alloc
+            |
+            ---__folio_alloc
+               __alloc_pages
+               |          
+                --0.62%--get_page_from_freelist
+
+     0.80%     0.00%  main     [kernel.kallsyms]     [k] __alloc_pages
+            |
+            ---__alloc_pages
+               |          
+                --0.62%--get_page_from_freelist
+
+     0.64%     0.00%  main     libc.so.6             [.] read
+            |
+            ---read
+               entry_SYSCALL_64_after_hwframe
+               do_syscall_64
+               __x64_sys_read
+               ksys_read
+               vfs_read
+
+     0.64%     0.00%  main     [kernel.kallsyms]     [k] __x64_sys_read
+            |
+            ---__x64_sys_read
+               ksys_read
+               vfs_read
+
+     0.64%     0.00%  main     [kernel.kallsyms]     [k] ksys_read
+            |
+            ---ksys_read
+               vfs_read
+
+     0.64%     0.00%  main     [kernel.kallsyms]     [k] vfs_read
+            |
+            ---vfs_read
+
+     0.62%     0.00%  main     [kernel.kallsyms]     [k] get_page_from_freelist
+            |
+            ---get_page_from_freelist
+
+     0.54%     0.54%  main     [kernel.kallsyms]     [k] copy_user_enhanced_fast_string
+     0.50%     0.00%  main     [kernel.kallsyms]     [k] new_sync_read
+     0.50%     0.00%  main     [kernel.kallsyms]     [k] ext4_file_read_iter
+     0.50%     0.00%  main     [kernel.kallsyms]     [k] generic_file_read_iter
+     0.50%     0.00%  main     [kernel.kallsyms]     [k] filemap_read
+     0.46%     0.00%  main     libc.so.6             [.] _int_malloc
+     0.45%     0.45%  main     [kernel.kallsyms]     [k] clear_page_erms
+     0.35%     0.12%  main     [kernel.kallsyms]     [k] ext4_da_write_end
+     0.33%     0.00%  main     libc.so.6             [.] __memmove_avx_unaligned_erms
+     0.23%     0.11%  main     [kernel.kallsyms]     [k] ext4_inode_csum
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] generic_write_end
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] __mark_inode_dirty
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] ext4_dirty_inode
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] __ext4_mark_inode_dirty
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] ext4_mark_iloc_dirty
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] ext4_do_update_inode.isra.0
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] ext4_fill_raw_inode
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] ext4_inode_csum_set
+     0.23%     0.23%  main     [kernel.kallsyms]     [k] mem_cgroup_css_rstat_flush
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] balance_dirty_pages_ratelimited
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] balance_dirty_pages
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] mem_cgroup_wb_stats
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] __mem_cgroup_flush_stats
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] cgroup_rstat_flush_irqsafe
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] cgroup_rstat_flush_locked
+     0.21%     0.21%  main     [kernel.kallsyms]     [k] __free_one_page
+     0.21%     0.00%  main     libc.so.6             [.] __brk
+     0.21%     0.00%  main     [kernel.kallsyms]     [k] __x64_sys_brk
+     0.21%     0.00%  main     [kernel.kallsyms]     [k] __do_sys_brk
+     0.21%     0.00%  main     [kernel.kallsyms]     [k] __do_munmap
+     0.21%     0.00%  main     [kernel.kallsyms]     [k] unmap_region
+     0.21%     0.00%  main     [kernel.kallsyms]     [k] tlb_finish_mmu
+     0.21%     0.00%  main     [kernel.kallsyms]     [k] tlb_batch_pages_flush
+     0.21%     0.00%  main     [kernel.kallsyms]     [k] free_pages_and_swap_cache
+     0.21%     0.00%  main     [kernel.kallsyms]     [k] release_pages
+     0.21%     0.00%  main     [kernel.kallsyms]     [k] free_unref_page_list
+     0.21%     0.00%  main     [kernel.kallsyms]     [k] free_unref_page_commit
+     0.21%     0.00%  main     [kernel.kallsyms]     [k] free_pcppages_bulk
+     0.19%     0.19%  main     [kernel.kallsyms]     [k] filemap_get_read_batch
+     0.19%     0.00%  main     [kernel.kallsyms]     [k] filemap_get_pages
+     0.18%     0.18%  main     ld-linux-x86-64.so.2  [.] _dl_check_map_versions
+     0.18%     0.00%  main     [unknown]             [.] 0x0000000000000010
+     0.18%     0.18%  main     [kernel.kallsyms]     [k] post_alloc_hook
+     0.17%     0.17%  main     [kernel.kallsyms]     [k] rmqueue_bulk
+     0.17%     0.00%  main     [kernel.kallsyms]     [k] rmqueue
+     0.17%     0.00%  main     [kernel.kallsyms]     [k] rmqueue_pcplist.constprop.0
+     0.15%     0.15%  main     [kernel.kallsyms]     [k] __fsnotify_parent
+     0.14%     0.00%  main     libc.so.6             [.] __memset_avx2_unaligned_erms
+     0.12%     0.12%  main     [kernel.kallsyms]     [k] perf_swevent_hrtimer
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] asm_sysvec_apic_timer_interrupt
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] sysvec_apic_timer_interrupt
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] __sysvec_apic_timer_interrupt
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] hrtimer_interrupt
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] __hrtimer_run_queues
+     0.12%     0.12%  main     [kernel.kallsyms]     [k] xas_start
+     0.12%     0.00%  main     libc.so.6             [.] __close_nocancel
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] syscall_exit_to_user_mode
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] exit_to_user_mode_prepare
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] exit_to_user_mode_loop
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] task_work_run
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] ____fput
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] __fput
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] ext4_release_file
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] ext4_alloc_da_blocks
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] filemap_flush
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] __filemap_fdatawrite_range
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] filemap_fdatawrite_wbc
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] do_writepages
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] ext4_writepages
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] mpage_release_unused_pages
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] pagevec_lookup_range
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] find_get_pages_range
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] xas_find
+     0.12%     0.00%  main     [unknown]             [k] 0x4143d4bf4441c01e
+     0.12%     0.12%  main     [kernel.kallsyms]     [k] crypto_shash_update
+     0.12%     0.00%  main     [unknown]             [k] 0x41429908dd5eecb1
+     0.12%     0.00%  main     [unknown]             [k] 0x4143f5ac4e40b45f
+     0.11%     0.00%  main     [unknown]             [k] 0x41437e6882dbb051
+     0.11%     0.00%  main     [unknown]             [k] 0x41437837ac71ba37
+     0.11%     0.00%  main     [unknown]             [k] 0x4142e07bd5dc2b0c
+     0.11%     0.11%  main     [kernel.kallsyms]     [k] obj_cgroup_charge
+     0.11%     0.00%  main     [unknown]             [k] 0x41430b63bff1c06d
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] ext4_da_write_begin
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] ext4_block_write_begin
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] create_empty_buffers
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] alloc_page_buffers
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] alloc_buffer_head
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] kmem_cache_alloc
+     0.11%     0.00%  main     [unknown]             [k] 0x4142d5839f5d915d
+     0.11%     0.11%  main     [kernel.kallsyms]     [k] memcg_slab_free_hook
+     0.11%     0.00%  main     [unknown]             [k] 0x7461705f74757074
+     0.11%     0.00%  main     libc.so.6             [.] __GI___libc_open
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] __x64_sys_openat
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] do_sys_openat2
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] do_filp_open
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] path_openat
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] do_open
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] do_truncate
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] notify_change
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] ext4_setattr
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] truncate_pagecache
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] truncate_inode_pages_range
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] truncate_cleanup_folio
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] ext4_invalidate_folio
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] block_invalidate_folio
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] filemap_release_folio
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] ext4_release_folio
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] jbd2_journal_try_to_free_buffers
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] try_to_free_buffers
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] free_buffer_head
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] kmem_cache_free
+     0.03%     0.00%  perf-ex  [unknown]             [k] 0x00007f4fa9ee346b
+     0.03%     0.00%  perf-ex  [kernel.kallsyms]     [k] entry_SYSCALL_64_after_hwframe
+     0.03%     0.00%  perf-ex  [kernel.kallsyms]     [k] do_syscall_64
+     0.03%     0.00%  perf-ex  [kernel.kallsyms]     [k] __x64_sys_execve
+     0.03%     0.02%  perf-ex  [kernel.kallsyms]     [k] perf_event_enable_on_exec
+     0.03%     0.00%  perf-ex  [kernel.kallsyms]     [k] do_execveat_common.isra.0
+     0.03%     0.00%  perf-ex  [kernel.kallsyms]     [k] bprm_execve
+     0.03%     0.00%  perf-ex  [kernel.kallsyms]     [k] bprm_execve.part.0
+     0.03%     0.00%  perf-ex  [kernel.kallsyms]     [k] exec_binprm
+     0.03%     0.00%  perf-ex  [kernel.kallsyms]     [k] search_binary_handler
+     0.03%     0.00%  perf-ex  [kernel.kallsyms]     [k] load_elf_binary
+     0.03%     0.00%  perf-ex  [kernel.kallsyms]     [k] begin_new_exec
+     0.03%     0.00%  perf-ex  [kernel.kallsyms]     [k] perf_event_exec
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] native_write_msr
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] ctx_resched
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] x86_pmu_enable
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] amd_pmu_enable_all
+
+
+# Samples: 864  of event 'instructions'
+# Event count (approx.): 9119296183
+#
+# Children      Self  Command  Shared Object         Symbol                                     
+# ........  ........  .......  ....................  ...........................................
+#
+    99.07%     0.00%  main     [unknown]             [k] 0x000055b96b582fc0
+            |
+            ---0x55b96b582fc0
+               |          
+                --99.01%--main
+
+    99.01%    99.01%  main     main                  [.] main
+            |
+            ---0x41435a18d1ce6f56
+               0x55b96b582fc0
+               main
+
+    99.01%     0.00%  main     [unknown]             [.] 0x41435a18d1ce6f56
+            |
+            ---0x41435a18d1ce6f56
+               0x55b96b582fc0
+               main
+
+     0.65%     0.00%  main     [kernel.kallsyms]     [k] entry_SYSCALL_64_after_hwframe
+            |
+            ---entry_SYSCALL_64_after_hwframe
+               do_syscall_64
+
+     0.65%     0.00%  main     [kernel.kallsyms]     [k] do_syscall_64
+            |
+            ---do_syscall_64
+
+     0.34%     0.00%  main     libc.so.6             [.] __GI___libc_write
+     0.34%     0.00%  main     [kernel.kallsyms]     [k] __x64_sys_write
+     0.34%     0.00%  main     [kernel.kallsyms]     [k] ksys_write
+     0.34%     0.00%  main     [kernel.kallsyms]     [k] vfs_write
+     0.34%     0.00%  main     [kernel.kallsyms]     [k] new_sync_write
+     0.34%     0.00%  main     [kernel.kallsyms]     [k] ext4_file_write_iter
+     0.34%     0.00%  main     [kernel.kallsyms]     [k] ext4_buffered_write_iter
+     0.34%     0.00%  main     [kernel.kallsyms]     [k] generic_perform_write
+     0.28%     0.00%  main     [unknown]             [k] 0000000000000000
+     0.23%     0.00%  main     [kernel.kallsyms]     [k] ext4_da_write_begin
+     0.20%     0.20%  main     [kernel.kallsyms]     [k] clear_page_erms
+     0.20%     0.00%  main     [kernel.kallsyms]     [k] __alloc_pages
+     0.20%     0.00%  main     [kernel.kallsyms]     [k] get_page_from_freelist
+     0.19%     0.19%  main     [kernel.kallsyms]     [k] __mod_node_page_state
+     0.19%     0.00%  main     [kernel.kallsyms]     [k] __mod_lruvec_page_state
+     0.18%     0.09%  main     libc.so.6             [.] __memmove_avx_unaligned_erms
+     0.14%     0.00%  main     [kernel.kallsyms]     [k] asm_exc_page_fault
+     0.14%     0.00%  main     [kernel.kallsyms]     [k] exc_page_fault
+     0.14%     0.00%  main     [kernel.kallsyms]     [k] do_user_addr_fault
+     0.14%     0.00%  main     [kernel.kallsyms]     [k] handle_mm_fault
+     0.14%     0.06%  main     [kernel.kallsyms]     [k] __handle_mm_fault
+     0.13%     0.13%  main     [kernel.kallsyms]     [k] copy_user_enhanced_fast_string
+     0.13%     0.00%  main     libc.so.6             [.] read
+     0.13%     0.00%  main     [kernel.kallsyms]     [k] __x64_sys_read
+     0.13%     0.00%  main     [kernel.kallsyms]     [k] ksys_read
+     0.13%     0.00%  main     [kernel.kallsyms]     [k] vfs_read
+     0.13%     0.00%  main     [kernel.kallsyms]     [k] new_sync_read
+     0.13%     0.00%  main     [kernel.kallsyms]     [k] ext4_file_read_iter
+     0.13%     0.00%  main     [kernel.kallsyms]     [k] generic_file_read_iter
+     0.13%     0.00%  main     [kernel.kallsyms]     [k] filemap_read
+     0.12%     0.12%  main     [kernel.kallsyms]     [k] alloc_buffer_head
+     0.12%     0.00%  main     [unknown]             [k] 0x414304296edc2f57
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] ext4_block_write_begin
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] create_empty_buffers
+     0.12%     0.00%  main     [kernel.kallsyms]     [k] alloc_page_buffers
+     0.11%     0.00%  main     [unknown]             [k] 0x41439ffa439548b1
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] grab_cache_page_write_begin
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] pagecache_get_page
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] __filemap_get_folio
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] filemap_alloc_folio
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] folio_alloc
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] alloc_pages
+     0.10%     0.00%  main     [unknown]             [k] 0x414322382111733c
+     0.10%     0.00%  main     [kernel.kallsyms]     [k] ext4_da_write_end
+     0.10%     0.00%  main     [kernel.kallsyms]     [k] generic_write_end
+     0.10%     0.00%  main     [kernel.kallsyms]     [k] __block_commit_write.constprop.0.isra.0
+     0.10%     0.00%  main     [kernel.kallsyms]     [k] mark_buffer_dirty
+     0.10%     0.00%  main     [kernel.kallsyms]     [k] __folio_mark_dirty
+     0.10%     0.00%  main     [kernel.kallsyms]     [k] folio_account_dirtied
+     0.10%     0.00%  main     [kernel.kallsyms]     [k] __mod_lruvec_state
+     0.10%     0.10%  main     ld-linux-x86-64.so.2  [.] strcmp
+     0.09%     0.00%  main     libc.so.6             [.] __close_nocancel
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] syscall_exit_to_user_mode
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] exit_to_user_mode_prepare
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] exit_to_user_mode_loop
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] task_work_run
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] ____fput
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] __fput
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] ext4_release_file
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] ext4_alloc_da_blocks
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] filemap_flush
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] __filemap_fdatawrite_range
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] filemap_fdatawrite_wbc
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] do_writepages
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] ext4_writepages
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] mpage_map_and_submit_extent
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] mpage_map_and_submit_buffers
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] mpage_submit_page
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] clear_page_dirty_for_io
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] folio_clear_dirty_for_io
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] mod_lruvec_page_state
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] handle_pte_fault
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] do_anonymous_page
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] vma_alloc_folio
+     0.09%     0.00%  main     [kernel.kallsyms]     [k] __folio_alloc
+     0.08%     0.08%  main     [kernel.kallsyms]     [k] zap_pte_range
+     0.08%     0.00%  main     libc.so.6             [.] __brk
+     0.08%     0.00%  main     [kernel.kallsyms]     [k] __x64_sys_brk
+     0.08%     0.00%  main     [kernel.kallsyms]     [k] __do_sys_brk
+     0.08%     0.00%  main     [kernel.kallsyms]     [k] __do_munmap
+     0.08%     0.00%  main     [kernel.kallsyms]     [k] unmap_region
+     0.08%     0.00%  main     [kernel.kallsyms]     [k] unmap_vmas
+     0.08%     0.00%  main     [kernel.kallsyms]     [k] unmap_single_vma
+     0.08%     0.00%  main     [kernel.kallsyms]     [k] unmap_page_range
+     0.08%     0.00%  main     [kernel.kallsyms]     [k] zap_pmd_range.isra.0
+     0.06%     0.00%  main     libc.so.6             [.] __memset_avx2_unaligned_erms
+     0.02%     0.02%  main     [kernel.kallsyms]     [k] commit_creds
+     0.02%     0.00%  main     [unknown]             [k] 0x00007f4fa9ee346b
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] __x64_sys_execve
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] do_execveat_common.isra.0
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] bprm_execve
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] bprm_execve.part.0
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] exec_binprm
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] search_binary_handler
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] load_elf_binary
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] begin_new_exec
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] native_write_msr
+     0.00%     0.00%  perf-ex  [unknown]             [k] 0x00007f4fa9ee346b
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] entry_SYSCALL_64_after_hwframe
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] do_syscall_64
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] __x64_sys_execve
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] do_execveat_common.isra.0
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] bprm_execve
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] bprm_execve.part.0
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] exec_binprm
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] search_binary_handler
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] load_elf_binary
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] begin_new_exec
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] perf_event_exec
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] perf_event_enable_on_exec
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] ctx_resched
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] x86_pmu_enable
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] amd_pmu_enable_all
+
+
+# Samples: 841  of event 'cache-references'
+# Event count (approx.): 1427490265
+#
+# Children      Self  Command  Shared Object         Symbol                            
+# ........  ........  .......  ....................  ..................................
+#
+    99.46%    99.46%  main     main                  [.] main
+            |
+            ---0x41435a18d1ce6f56
+               0x55b96b582fc0
+               main
+
+    99.46%     0.00%  main     [unknown]             [.] 0x41435a18d1ce6f56
+            |
+            ---0x41435a18d1ce6f56
+               0x55b96b582fc0
+               main
+
+    99.46%     0.00%  main     [unknown]             [.] 0x000055b96b582fc0
+            |
+            ---0x55b96b582fc0
+               main
+
+     0.19%     0.00%  main     [kernel.kallsyms]     [k] entry_SYSCALL_64_after_hwframe
+     0.19%     0.00%  main     [kernel.kallsyms]     [k] do_syscall_64
+     0.15%     0.02%  main     [kernel.kallsyms]     [k] asm_exc_page_fault
+     0.13%     0.00%  main     [kernel.kallsyms]     [k] exc_page_fault
+     0.13%     0.00%  main     [kernel.kallsyms]     [k] do_user_addr_fault
+     0.13%     0.00%  main     [kernel.kallsyms]     [k] handle_mm_fault
+     0.12%     0.10%  main     libc.so.6             [.] __memmove_avx_unaligned_erms
+     0.11%     0.00%  main     [unknown]             [k] 0000000000000000
+     0.11%     0.11%  main     [kernel.kallsyms]     [k] alloc_pages
+     0.11%     0.00%  main     [unknown]             [k] 0x4142bd42158670c3
+     0.11%     0.00%  main     libc.so.6             [.] __GI___libc_write
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] __x64_sys_write
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] ksys_write
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] vfs_write
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] new_sync_write
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] ext4_file_write_iter
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] ext4_buffered_write_iter
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] generic_perform_write
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] ext4_da_write_begin
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] grab_cache_page_write_begin
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] pagecache_get_page
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] __filemap_get_folio
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] filemap_alloc_folio
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] folio_alloc
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] __handle_mm_fault
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] handle_pte_fault
+     0.11%     0.00%  main     [kernel.kallsyms]     [k] do_anonymous_page
+     0.08%     0.08%  main     [kernel.kallsyms]     [k] clear_page_erms
+     0.08%     0.00%  main     [kernel.kallsyms]     [k] vma_alloc_folio
+     0.08%     0.00%  main     [kernel.kallsyms]     [k] __folio_alloc
+     0.08%     0.00%  main     [kernel.kallsyms]     [k] __alloc_pages
+     0.08%     0.00%  main     [kernel.kallsyms]     [k] get_page_from_freelist
+     0.08%     0.08%  main     libc.so.6             [.] _IO_file_xsputn@@GLIBC_2.2.5
+     0.07%     0.00%  main     libc.so.6             [.] read
+     0.05%     0.00%  main     [kernel.kallsyms]     [k] __x64_sys_read
+     0.05%     0.00%  main     [kernel.kallsyms]     [k] ksys_read
+     0.05%     0.00%  main     [kernel.kallsyms]     [k] vfs_read
+     0.05%     0.00%  main     [kernel.kallsyms]     [k] new_sync_read
+     0.05%     0.00%  main     [kernel.kallsyms]     [k] ext4_file_read_iter
+     0.05%     0.00%  main     [kernel.kallsyms]     [k] generic_file_read_iter
+     0.05%     0.00%  main     [kernel.kallsyms]     [k] filemap_read
+     0.04%     0.00%  main     libc.so.6             [.] _int_malloc
+     0.04%     0.00%  main     libc.so.6             [.] sysmalloc
+     0.02%     0.02%  main     [kernel.kallsyms]     [k] consume_stock
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] copy_user_enhanced_fast_string
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] __mem_cgroup_charge
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] charge_memcg
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] try_charge_memcg
+     0.02%     0.02%  main     [kernel.kallsyms]     [k] folio_mark_accessed
+     0.02%     0.02%  main     ld-linux-x86-64.so.2  [.] strcmp
+     0.02%     0.00%  main     [unknown]             [.] 0x2e34362d3638782d
+     0.02%     0.02%  main     [kernel.kallsyms]     [k] pud_val
+     0.02%     0.02%  main     [kernel.kallsyms]     [k] perf_iterate_ctx
+     0.02%     0.00%  main     libc.so.6             [.] __brk
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] __x64_sys_brk
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] __do_sys_brk
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] do_brk_flags
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] perf_event_mmap
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] perf_event_mmap_event
+     0.02%     0.00%  main     [kernel.kallsyms]     [k] perf_iterate_sb
+     0.02%     0.02%  main     libc.so.6             [.] _IO_fread
+     0.01%     0.01%  main     [kernel.kallsyms]     [k] mprotect_fixup
+     0.01%     0.00%  main     [unknown]             [k] 0x00007f4fa9ee346b
+     0.01%     0.00%  main     [kernel.kallsyms]     [k] __x64_sys_execve
+     0.01%     0.00%  main     [kernel.kallsyms]     [k] do_execveat_common.isra.0
+     0.01%     0.00%  main     [kernel.kallsyms]     [k] bprm_execve
+     0.01%     0.00%  main     [kernel.kallsyms]     [k] bprm_execve.part.0
+     0.01%     0.00%  main     [kernel.kallsyms]     [k] exec_binprm
+     0.01%     0.00%  main     [kernel.kallsyms]     [k] search_binary_handler
+     0.01%     0.00%  main     [kernel.kallsyms]     [k] load_elf_binary
+     0.01%     0.00%  main     [kernel.kallsyms]     [k] setup_arg_pages
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] native_write_msr
+     0.00%     0.00%  perf-ex  [unknown]             [k] 0x00007f4fa9ee346b
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] entry_SYSCALL_64_after_hwframe
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] do_syscall_64
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] __x64_sys_execve
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] do_execveat_common.isra.0
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] bprm_execve
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] bprm_execve.part.0
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] exec_binprm
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] search_binary_handler
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] load_elf_binary
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] begin_new_exec
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] perf_event_exec
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] perf_event_enable_on_exec
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] ctx_resched
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] x86_pmu_enable
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]     [k] amd_pmu_enable_all
+
+
+# Samples: 765  of event 'cache-misses'
+# Event count (approx.): 109030862
+#
+# Children      Self  Command  Shared Object      Symbol                                     
+# ........  ........  .......  .................  ...........................................
+#
+    99.04%     0.00%  main     [unknown]          [.] 0x41435a18d1ce6f56
+            |
+            ---0x41435a18d1ce6f56
+               0x55b96b582fc0
+               main
+
+    99.04%     0.00%  main     [unknown]          [.] 0x000055b96b582fc0
+            |
+            ---0x55b96b582fc0
+               main
+
+    99.04%    98.76%  main     main               [.] main
+            |          
+             --98.76%--0x41435a18d1ce6f56
+                       0x55b96b582fc0
+                       main
+
+     0.67%     0.00%  main     [kernel.kallsyms]  [k] entry_SYSCALL_64_after_hwframe
+            |
+            ---entry_SYSCALL_64_after_hwframe
+               do_syscall_64
+
+     0.67%     0.00%  main     [kernel.kallsyms]  [k] do_syscall_64
+            |
+            ---do_syscall_64
+
+     0.66%     0.00%  main     [unknown]          [k] 0000000000000000
+            |
+            ---0
+
+     0.40%     0.00%  main     libc.so.6          [.] read
+     0.40%     0.00%  main     [kernel.kallsyms]  [k] __x64_sys_read
+     0.40%     0.00%  main     [kernel.kallsyms]  [k] ksys_read
+     0.40%     0.00%  main     [kernel.kallsyms]  [k] vfs_read
+     0.40%     0.00%  main     [kernel.kallsyms]  [k] new_sync_read
+     0.40%     0.00%  main     [kernel.kallsyms]  [k] ext4_file_read_iter
+     0.40%     0.00%  main     [kernel.kallsyms]  [k] generic_file_read_iter
+     0.40%     0.00%  main     [kernel.kallsyms]  [k] filemap_read
+     0.40%     0.17%  main     [kernel.kallsyms]  [k] copy_user_enhanced_fast_string
+     0.38%     0.00%  main     [kernel.kallsyms]  [k] asm_exc_page_fault
+     0.38%     0.00%  main     [kernel.kallsyms]  [k] exc_page_fault
+     0.38%     0.00%  main     [kernel.kallsyms]  [k] do_user_addr_fault
+     0.38%     0.00%  main     [kernel.kallsyms]  [k] handle_mm_fault
+     0.38%     0.00%  main     [kernel.kallsyms]  [k] __handle_mm_fault
+     0.38%     0.00%  main     [kernel.kallsyms]  [k] handle_pte_fault
+     0.38%     0.00%  main     [kernel.kallsyms]  [k] do_anonymous_page
+     0.28%     0.00%  main     [kernel.kallsyms]  [k] asm_sysvec_apic_timer_interrupt
+     0.28%     0.00%  main     [kernel.kallsyms]  [k] sysvec_apic_timer_interrupt
+     0.28%     0.00%  main     [kernel.kallsyms]  [k] __sysvec_apic_timer_interrupt
+     0.28%     0.00%  main     [kernel.kallsyms]  [k] hrtimer_interrupt
+     0.28%     0.00%  main     [kernel.kallsyms]  [k] __hrtimer_run_queues
+     0.27%     0.27%  main     [kernel.kallsyms]  [k] consume_stock
+     0.27%     0.00%  main     [kernel.kallsyms]  [k] try_charge_memcg
+     0.23%     0.00%  main     [kernel.kallsyms]  [k] __mem_cgroup_charge
+     0.23%     0.00%  main     [kernel.kallsyms]  [k] charge_memcg
+     0.20%     0.00%  main     [kernel.kallsyms]  [k] __alloc_pages
+     0.15%     0.15%  main     [kernel.kallsyms]  [k] clear_page_erms
+     0.15%     0.00%  main     libc.so.6          [.] _int_malloc
+     0.15%     0.00%  main     [kernel.kallsyms]  [k] vma_alloc_folio
+     0.15%     0.00%  main     [kernel.kallsyms]  [k] __folio_alloc
+     0.15%     0.00%  main     [kernel.kallsyms]  [k] get_page_from_freelist
+     0.15%     0.15%  main     [kernel.kallsyms]  [k] memcpy_erms
+     0.15%     0.00%  main     [kernel.kallsyms]  [k] perf_swevent_hrtimer
+     0.15%     0.00%  main     [kernel.kallsyms]  [k] __perf_event_overflow
+     0.15%     0.00%  main     [kernel.kallsyms]  [k] perf_event_output_forward
+     0.15%     0.00%  main     [kernel.kallsyms]  [k] perf_output_sample
+     0.14%     0.14%  main     libc.so.6          [.] __memmove_avx_unaligned_erms
+     0.14%     0.14%  main     [kernel.kallsyms]  [k] native_read_msr
+     0.14%     0.00%  main     [kernel.kallsyms]  [k] tick_sched_timer
+     0.14%     0.00%  main     [kernel.kallsyms]  [k] tick_sched_handle
+     0.14%     0.00%  main     [kernel.kallsyms]  [k] update_process_times
+     0.14%     0.00%  main     [kernel.kallsyms]  [k] scheduler_tick
+     0.14%     0.00%  main     [kernel.kallsyms]  [k] arch_scale_freq_tick
+     0.12%     0.12%  main     [kernel.kallsyms]  [k] __mod_node_page_state
+     0.12%     0.00%  main     [unknown]          [k] 0x414337617275bd0b
+     0.12%     0.00%  main     libc.so.6          [.] __GI___libc_write
+     0.12%     0.00%  main     [kernel.kallsyms]  [k] __x64_sys_write
+     0.12%     0.00%  main     [kernel.kallsyms]  [k] ksys_write
+     0.12%     0.00%  main     [kernel.kallsyms]  [k] vfs_write
+     0.12%     0.00%  main     [kernel.kallsyms]  [k] new_sync_write
+     0.12%     0.00%  main     [kernel.kallsyms]  [k] ext4_file_write_iter
+     0.12%     0.00%  main     [kernel.kallsyms]  [k] ext4_buffered_write_iter
+     0.12%     0.00%  main     [kernel.kallsyms]  [k] generic_perform_write
+     0.12%     0.00%  main     [kernel.kallsyms]  [k] ext4_da_write_end
+     0.12%     0.00%  main     [kernel.kallsyms]  [k] generic_write_end
+     0.12%     0.00%  main     [kernel.kallsyms]  [k] __block_commit_write.constprop.0.isra.0
+     0.12%     0.00%  main     [kernel.kallsyms]  [k] mark_buffer_dirty
+     0.12%     0.00%  main     [kernel.kallsyms]  [k] __folio_mark_dirty
+     0.12%     0.00%  main     [kernel.kallsyms]  [k] folio_account_dirtied
+     0.11%     0.11%  main     [kernel.kallsyms]  [k] mpage_process_page_bufs
+     0.11%     0.00%  main     libc.so.6          [.] __close_nocancel
+     0.11%     0.00%  main     [kernel.kallsyms]  [k] syscall_exit_to_user_mode
+     0.11%     0.00%  main     [kernel.kallsyms]  [k] exit_to_user_mode_prepare
+     0.11%     0.00%  main     [kernel.kallsyms]  [k] exit_to_user_mode_loop
+     0.11%     0.00%  main     [kernel.kallsyms]  [k] task_work_run
+     0.11%     0.00%  main     [kernel.kallsyms]  [k] ____fput
+     0.11%     0.00%  main     [kernel.kallsyms]  [k] __fput
+     0.11%     0.00%  main     [kernel.kallsyms]  [k] ext4_release_file
+     0.11%     0.00%  main     [kernel.kallsyms]  [k] ext4_alloc_da_blocks
+     0.11%     0.00%  main     [kernel.kallsyms]  [k] filemap_flush
+     0.11%     0.00%  main     [kernel.kallsyms]  [k] __filemap_fdatawrite_range
+     0.11%     0.00%  main     [kernel.kallsyms]  [k] filemap_fdatawrite_wbc
+     0.11%     0.00%  main     [kernel.kallsyms]  [k] do_writepages
+     0.11%     0.00%  main     [kernel.kallsyms]  [k] ext4_writepages
+     0.05%     0.00%  main     [unknown]          [k] 0x00007f4fa9ee346b
+     0.05%     0.00%  main     [kernel.kallsyms]  [k] __x64_sys_execve
+     0.05%     0.00%  main     [kernel.kallsyms]  [k] do_execveat_common.isra.0
+     0.05%     0.00%  main     [kernel.kallsyms]  [k] bprm_execve
+     0.05%     0.00%  main     [kernel.kallsyms]  [k] bprm_execve.part.0
+     0.05%     0.00%  main     [kernel.kallsyms]  [k] exec_binprm
+     0.05%     0.00%  main     [kernel.kallsyms]  [k] search_binary_handler
+     0.05%     0.00%  main     [kernel.kallsyms]  [k] load_elf_binary
+     0.05%     0.00%  main     [kernel.kallsyms]  [k] setup_arg_pages
+     0.05%     0.00%  main     [kernel.kallsyms]  [k] shift_arg_pages
+     0.05%     0.00%  main     [kernel.kallsyms]  [k] move_page_tables
+     0.05%     0.00%  main     [kernel.kallsyms]  [k] __pmd_alloc
+     0.05%     0.00%  main     [kernel.kallsyms]  [k] alloc_pages
+     0.05%     0.00%  main     [kernel.kallsyms]  [k] __memcg_kmem_charge_page
+     0.00%     0.00%  perf-ex  [unknown]          [k] 0x00007f4fa9ee346b
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]  [k] perf_event_exec
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]  [k] entry_SYSCALL_64_after_hwframe
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]  [k] do_syscall_64
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]  [k] __x64_sys_execve
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]  [k] do_execveat_common.isra.0
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]  [k] bprm_execve
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]  [k] bprm_execve.part.0
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]  [k] exec_binprm
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]  [k] search_binary_handler
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]  [k] load_elf_binary
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]  [k] begin_new_exec
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]  [k] perf_event_enable_on_exec
+     0.00%     0.00%  perf-ex  [kernel.kallsyms]  [k] perf_event_addr_filters_exec
+
+
+#
+# (Cannot load tips.txt file, please install perf!)
+#

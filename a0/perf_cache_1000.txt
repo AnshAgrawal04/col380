@@ -1,0 +1,42 @@
+Command: perf stat -e cycles,instructions,task-clock,branch-misses,cache-misses,instructions,cycles,cache-references,cache-misses ./main 0 1000 1000 1000 paths/input_path_1000/ paths/output_path_1000/
+
+ Performance counter stats for './main 0 1000 1000 1000 paths/input_path_1000/ paths/output_path_1000/':
+
+    3,53,41,38,788      cycles                    #    4.042 GHz                      (62.39%)
+    9,07,99,09,803      instructions              #    2.58  insn per cycle           (62.72%)
+            874.40 msec task-clock                #    0.940 CPUs utilized          
+         12,25,579      branch-misses                                                 (62.56%)
+      10,01,90,070      cache-misses              #    6.556 % of all cache refs      (62.56%)
+    9,04,24,73,591      instructions              #    2.57  insn per cycle           (62.52%)
+    3,50,82,59,930      cycles                    #    4.012 GHz                      (62.71%)
+    1,52,81,41,833      cache-references          #    1.748 G/sec                    (62.42%)
+       9,84,38,561      cache-misses              #    6.442 % of all cache refs      (62.12%)
+
+       0.930590195 seconds time elapsed
+
+       0.850929000 seconds user
+       0.023969000 seconds sys
+
+
+
+Command: perf stat -e cycles,instructions,task-clock,branch-misses,cache-misses,instructions,cycles,cache-references,cache-misses ./main 0 1000 1000 1000 paths/input_path_1000/ paths/output_path_1000/
+
+ Performance counter stats for './main 0 1000 1000 1000 paths/input_path_1000/ paths/output_path_1000/':
+
+    3,47,27,78,935      cycles                    #    4.068 GHz                      (62.10%)
+    9,21,18,04,182      instructions              #    2.65  insn per cycle           (62.10%)
+            853.65 msec task-clock                #    0.996 CPUs utilized          
+         11,21,485      branch-misses                                                 (61.97%)
+      10,99,15,989      cache-misses              #    7.334 % of all cache refs      (62.44%)
+    9,03,74,02,649      instructions              #    2.60  insn per cycle           (62.91%)
+    3,48,35,38,000      cycles                    #    4.081 GHz                      (63.29%)
+    1,49,86,32,914      cache-references          #    1.756 G/sec                    (62.82%)
+       9,90,52,863      cache-misses              #    6.610 % of all cache refs      (62.37%)
+
+       0.857093670 seconds time elapsed
+
+       0.837597000 seconds user
+       0.016107000 seconds sys
+
+
+
