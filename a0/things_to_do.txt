@@ -1,0 +1,16 @@
+Note that "O3” is specific to GCC and LLVM compilers. “O3” enables a few of compiler 
+optimizations. Optimization flags for GCC can be found at 
+https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html. In particular, see -ftree
+vectorize, -fopt-info-vec-optimized, and –mavx512f. Your submissions should run with g++ 
+version 11.2 with std c++17. (You may also try icpx.)  
+
+The number of cache accesses and page faults on executing 
+a given command (program). You will gather values and plot performance graphs for this 
+assignment.
+
+For each experiment, report the total number of cache misses and cache-hit rate (as 
+a percent of total cache accesses), the CPU time taken by your execution, the CPU time 
+taken by each matrixMultiplyXYZ routine, the percent of the  CPU time taken by 
+matrixMultiplyXYZ, readMatrix, and writeMatrix functions (see below). Each should be 
+graphed in a separate curve to be included in your report. Raw data should also be provided 
+in the format listed later. 

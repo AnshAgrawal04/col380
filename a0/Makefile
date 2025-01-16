@@ -1,5 +1,5 @@
 # Compiler and flags
-CXX = g++
+CXX = g++-11
 CXXFLAGS = -Wall -Wextra -std=c++17 -O3 -pg -fno-inline
 
 # Target name
