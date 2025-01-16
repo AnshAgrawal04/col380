@@ -1,6 +1,6 @@
 # Compiler and flags
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++17 -O3 -pg
+CXXFLAGS = -Wall -Wextra -std=c++17 -O3 -pg -fno-inline
 
 # Target name
 TARGET = main

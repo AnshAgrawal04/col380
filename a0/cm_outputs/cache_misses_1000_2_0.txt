@@ -1,0 +1,21 @@
+Command: perf stat -e cycles,instructions,task-clock,branch-misses,cache-misses,instructions,cycles,cache-references,cache-misses ./main 2 1000 1000 1000 paths/input_path_1000/ paths/output_path_1000/
+
+ Performance counter stats for './main 2 1000 1000 1000 paths/input_path_1000/ paths/output_path_1000/':
+
+    3,42,86,95,071      cycles                    #    3.934 GHz                      (62.38%)
+    8,11,85,09,272      instructions              #    2.36  insn per cycle           (62.83%)
+            871.51 msec task-clock                #    1.000 CPUs utilized          
+         12,29,252      branch-misses                                                 (62.83%)
+       5,08,66,468      cache-misses              #    3.483 % of all cache refs      (62.83%)
+    8,02,82,08,592      instructions              #    2.34  insn per cycle           (62.82%)
+    3,44,12,35,804      cycles                    #    3.949 GHz                      (62.40%)
+    1,46,03,78,951      cache-references          #    1.676 G/sec                    (61.96%)
+       5,27,28,177      cache-misses              #    3.611 % of all cache refs      (61.96%)
+
+       0.871832595 seconds time elapsed
+
+       0.859783000 seconds user
+       0.011996000 seconds sys
+
+
+

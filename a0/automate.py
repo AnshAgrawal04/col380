@@ -54,9 +54,33 @@ def find_cache_references():
                     f.write("\n")
                 print(f"Done with {j}x{j} matrix multiplication with {i}th algorithm")
 
+def run_gprof():
+    for j in [1000*x for x in range(1,6)]:
+        for i in range(6):
+            for k in range(3):
+                newfile = f"cm_outputs/cache_misses_{j}_{i}_{k}.txt"
+                with open(newfile, "w") as f:
+                    command = f"perf stat -e cycles,instructions,task-clock,branch-misses,cache-misses,instructions,cycles,cache-references,cache-misses ./main {i} {j} {j} {j} paths/input_path_{j}/ paths/output_path_{j}/"
+                    f.write(f"Command: {command}\n")
+                    try:
+                        result = subprocess.run(command, shell=True, capture_output=True, text=True)
+                        f.write(result.stdout)
+                        f.write(result.stderr)
+                    except Exception as e:
+                        f.write(f"Error running command: {e}\n")
+                    f.write("\n")
+                command = "ls -sh gmon.out"
+                result = subprocess.run(command, shell=True, capture_output=True, text=True)
+                
+                gprof_file = f"gprof_outputs/gprof_{j}_{i}_{k}.txt"
+                command = f"gprof --graph ./main  > {gprof_file}"
+                os.system(command)
+                print(f"Done with {j}x{j} matrix multiplication with {i}th algorithm")
+
 
 if __name__ == "__main__":
     #gen_input_files()
-    find_cache_references()
-    find_cache_misses()
+    #find_cache_references()
+    #find_cache_misses()
     # os.system("rm -r paths")
+    run_gprof()
